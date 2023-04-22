@@ -1,0 +1,340 @@
+@import url(./reset.css);
+@font-face {
+    font-family: 'Liberation Sans Bold';
+    src: url("/fonts/LiberationSans-Bold-webfont.ttf");
+
+}
+
+@font-face {
+    font-family: 'Liberation Sans Regular';
+    src: url("/fonts/LiberationSans-Regular-webfont.ttf");
+}
+
+main{
+    background-color: rgb(24, 24, 24);
+}
+
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-size: 16px;
+    font-family:"Liberation Sans Bold";
+}
+
+/*-------header-------- */
+header{
+    background-image: url(/imges/background.jpg);
+    /* display: flex; */
+   
+
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width:50%;
+}
+
+/* .navbar{
+  margin-top: 20px;
+} */
+
+nav>ul{
+
+  margin-top: 10px;
+
+}
+
+nav ul>li{
+    font-size:20px;
+    margin: 0 auto;
+    font-family: "Liberation Sans regular";
+
+}
+
+nav ul li>*{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*-------main-------- */
+.container{
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(216, 213, 213);
+}
+
+.image1{
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+.card1{
+   margin-top: 50px;
+   position: relative;
+   
+}
+
+.card1::before{
+    content: "-45%";
+    font-size: 35px;
+    color: rgb(245, 163, 11);
+    background-color: black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: absolute;
+    right: -10px;
+    top: -20px;
+}
+
+.text::before{
+    content: "120€";
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+figure>img{
+   /* border: 2px red solid; */
+
+}
+
+figcaption{
+font-size: 16px;
+text-align: center;
+margin-top: 10px;
+}
+
+.boutton1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button{
+padding: 8px;
+color: white;
+background-color: rgb(34, 32, 32);
+}
+
+/* sav */
+
+.sav{
+    background-color:white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sav ul{
+
+}
+
+
+
+/* center  ???????? */
+.sav ul>li {
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.sav ul li>*{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.841);
+}
+
+
+/* -------------footer------------ */
+footer{
+    background-color: rgb(2, 2, 2);
+}
+
+footer p{
+    color: white;
+}
+/* icone cofiance  */
+.icone1 img{
+   width: 65px;
+}
+
+.icone{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.icone1{
+   text-align: center;
+   margin: 10px;
+   margin-bottom: 30px;
+   margin-top: 30px;
+}
+
+
+.reseaux>*{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.reseaux ul li{
+margin: 0 auto;
+}
+
+
+
+
+
+
+
+/* ------------------------------
+            destock
+---------------------------------*/
+
+@media screen and (min-width:576px){
+   body{
+    padding: 0;
+    margin: 0;
+    /* border: 5px solid red; */
+   } 
+
+   /*-------header-------- */
+header{
+    background-image: url(/imges/background.jpg);
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.logo img{
+    width:250px;
+}
+
+/* .navbar{
+  margin-top: 20px;
+} */
+
+.navbar p{
+    margin-left: 250px;   
+}
+
+nav ul{
+margin-top:30px ;  
+margin-left: 10px;
+}
+
+nav ul li{
+margin: 10px;
+}
+
+ul{
+    /* display: flex; */
+    margin-top: 20px;
+   
+}
+
+li{
+    list-style-type: none;
+    margin: 20px;
+}
+
+/*-------main-------- */
+.container{
+    width: 70%;
+    margin: 0 auto;
+    /* background-color: rgb(250, 250, 250); */
+    position: relative;
+}
+
+
+.card{
+    width: 20rem;
+}
+
+.card1{
+   margin-bottom: 80px;
+}
+
+.card1:last-child{
+/* margin-bottom: 40px; */
+}
+
+
+.bigcard{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+
+}
+
+/* sav */
+
+.sav{
+/* position: absolute; */
+padding: 10px;
+}
+
+.sav ul{
+    /* width: 500px */
+}
+
+.sav ul>li{
+   font-size: 25px;
+}
+
+/* ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    margin: 10px;
+} */
+
+
+/* icone confiance */
+.pied1{
+    padding: 50px
+}
+
+
+.icone{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+
+
+}
